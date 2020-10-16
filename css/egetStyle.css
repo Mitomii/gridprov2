@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+}
+
+.allaFractions {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-gap: 0px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "he he he he na na"
+        "a1 a1 a2 a2 a2 s1"
+        "a3 a3 a2 a2 a2 s1"
+        "s2 a4 se se se s1"
+        "s2 a4 se se se s1"
+        "s2 ft ft ft ft ft"
+    ;
+}
+
+.article1 {
+    grid-area: a1;
+    background-color: teal;
+}
+.article2 {
+    grid-area: a2;
+    background-color: skyblue;
+}
+.article3 {
+    grid-area: a3;
+    background-color: turquoise;
+}
+.article4 {
+    grid-area: a4;
+    background-color: powderblue;
+}
+.allaDivs {
+    display: grid;
+    grid-gap: 2px;
+    grid-area: se;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 8px;
+    background-color: deepskyblue;
+   
+}
+.header {
+    grid-area: he;
+    background-color: royalblue;
+}
+.nav {
+    grid-area: na;
+    background-color: slateblue;
+}
+.aside1 {
+    grid-area: s1;
+    background-color: paleturquoise;
+}
+.aside2 {
+    grid-area: s2;
+    background-color: mediumpurple;
+}
+.footer {
+    grid-area: ft;
+    background-color: plum;
+}
+div {
+    background-color: lightpink;
+}
